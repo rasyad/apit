@@ -42,11 +42,11 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="menu nav navbar-nav ">
-		        <li><a href="index.html">home</a></li>
-		        <li class="active"><a href="izin.html">pengajuan izin</a></li>
-		        <li><a href="blog.html">blog</a></li>
-		        <li><a href="about.html">about</a></li>
-		        <li><a href="contact.html">contact</a></li>
+		        <li id="homepageLink"><a href="./">home</a></li>
+		        <li id="izinLink"><a href="./izin">pengajuan izin</a></li>
+		        <li id="statusIzinLink"><a href="./statusizin">status perizinan</a></li>
+		        <li id="aboutLink"><a href="./about">about</a></li>
+		        <li id="loginLink"><a href="./login">login</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
@@ -59,9 +59,10 @@
 		</nav>
 		</div>
 		<ol class="breadcrumb">
-		  <li><a href="index.html">Home</a></li>
-		  <li class="active">pengajuan izin</li>
+		  <!-- li><a href="index.html">Home</a></li>
+		  <li class="active">pengajuan izin</li -->
 		</ol>
+			
 	</div>
 </div>
 <div class="main"><!-- start main -->
@@ -86,7 +87,7 @@
 				</div>
 			</div>
 			<div class="col-md-7 copy">
-				<p class="link text-right"><span>&#169; All rights reserved | Design by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+				<p class="link text-right"><span>&#169; APIT Lahan Kota Bandung | Design by&nbsp;<a href="http://w3layouts.com/"> G11-K01</a></span></p>
 			</div>
 		</div>
 	</div>

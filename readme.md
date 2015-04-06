@@ -1,7 +1,3 @@
-## Tugas 2 PPL
-
-Aplikasi Izin Terkait (APIT) Lahan Kota Bandung
-
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
