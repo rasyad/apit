@@ -12,10 +12,18 @@
 */
 
 Route::get('/', 'PageController@index');
-Route::get('izin', 'PageController@izin');
-Route::get('statusizin', 'PageController@statusizin');
+
+Route::get('login', 'LoginController@index');
+Route::post('login', array('uses' => 'LoginController@validasi'));
+
+//Route::get('statusizin', 'PageController@statusizin');
+Route::get('statusizin', 'IzinController@show_izinstatus');
+
 Route::get('about', 'PageController@about');
-Route::get('login', 'PageController@login');
+Route::get('izin', 'PageController@izin');
+
+Route::post('izinnext', 'PageController@izinnext');
+Route::get('izinnext', 'PageController@izinnext');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

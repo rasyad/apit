@@ -37,7 +37,7 @@
 				</div>
 			    <div class="clearfix"></div>
 	</div>
-	<div class="row grids_btm top">
+	<!--div class="row grids_btm top">
 		<div class="col-md-6">
 			<div class="grid_list">
 				<div class="images_1_of_1">
@@ -61,7 +61,7 @@
 	 				</div>
 				</div>
 				 <div class="clearfix"></div>
-			</div>
+			</div-->
 	</div>
 
 </div>

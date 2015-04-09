@@ -17,6 +17,11 @@ class PageController extends Controller {
 		return view('izin');
 	}
 
+	public function izinnext()
+	{
+		return view('izinnext');
+	}
+
 	public function statusizin()
 	{
 		return view('statusizin');
@@ -25,11 +30,6 @@ class PageController extends Controller {
 	public function about()
 	{
 		return view('about');
-	}
-
-	public function login()
-	{
-		return view('login');
 	}
 
 }

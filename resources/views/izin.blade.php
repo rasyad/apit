@@ -14,7 +14,9 @@
 	<div class="col-md-8">
 				  <div class="contact-form">
 				  	<h2>Permohonan Izin</h2>
-					    <form method="post" action="izin-2.html">
+					    <form method="POST" action="izinnext">
+					    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
 					    	<div>
 						     	<span>Nomor Induk Kependudukan</span>
 						    	<span><input type="text" class="form-control" id="noktp"></span>
