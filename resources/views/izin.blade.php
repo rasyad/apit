@@ -14,69 +14,54 @@
 	<div class="col-md-8">
 				  <div class="contact-form">
 				  	<h2>Permohonan Izin</h2>
-					    <form method="POST" action="izinnext">
+					    <form method="POST" action="izin/post">
 					    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 					    	<div>
 						     	<span>Nomor Induk Kependudukan</span>
-						    	<span><input type="text" class="form-control" id="noktp"></span>
+						    	<span><input type="text" class="form-control" id="nik" name="nik"></span>
 						    </div>
 					    	<div>
 						     	<span>Nama Lengkap</span>
-						    	<span><input type="text" class="form-control" id="number"></span>
+						    	<span><input type="text" class="form-control" id="nama" name="nama"></span>
+						    </div>
+						    <div>
+						     	<span>E-mail</span>
+						    	<span><input type="text" class="form-control" id="email" name="email"></span>
 						    </div>
 						    <div>
 						     	<span>Pekerjaan</span>
-						    	<span><input type="text" class="form-control" id="number"></span>
+						    	<span><input type="text" class="form-control" id="pekerjaan" name="pekerjaan"></span>
 						    </div>
 						    <div>
 						     	<span>Bertindak untuk / atas nama</span>
-						    	<span><input type="text" class="form-control" id="number"></span>
-						    </div>
-						    <div>
-						     	<span>Dengan ini saya mengajukan permohonan izin</span>
-						     	<div class="checkbox" style="font-size:120%">
-						     		<label>
-						     			<input type="checkbox" value="">
-						     			Pembuatan/Pelebaran *) Jalan Masuk Pekarangan
-						     		</label>
-						     	</div>
-						     	<div class="checkbox" style="font-size:120%">
-						     		<label>
-						     			<input type="checkbox" value="">
-						     			Penutupan/Penggunaan Trotoar/Berm/Saluran *(
-						     		</label>
-						     	</div>
-						     	<div class="checkbox" style="font-size:120%">
-						     		<label>
-						     			<input type="checkbox" value="">
-						     			Pemancangan Tiang Reklame/JPO/Bando dan Sejenisnya
-						     		</label>
-						     	</div>
-						     	<div class="checkbox" style="font-size:120%">
-						     		<label>
-						     			<input type="checkbox" value="">
-						     			Pematangan Tanah /Lahan
-						     		</label>
-						     	</div>
-						     	<div class="checkbox" style="font-size:120%">
-						     		<label>
-						     			<input type="checkbox" value="">
-						     			Penggalian Pada Ruang Milik Jalan (RUMIJA)
-						     		</label>
-						     	</div>
+						    	<span><input type="text" class="form-control" id="atas_nama" name="atas_nama"></span>
 						    </div>
 						  	<div>
 						     	<span>Alamat</span>
-						    	<span><input type="text" class="form-control" id="number"></span>
+						    	<span><input type="text" class="form-control" id="alamat" name="alamat"></span>
 						    </div>
 						    <div>
-						     	<span>Kelurahan</span>
-						    	<span><input type="text" class="form-control" id="number"></span>
+						    	<span>Dengan ini saya mengajukan permohonan izin</span>
+						    	<span> 
+									<select class="form-control" id="jenis_izin" name="jenis_izin">
+									  <option value="jmp_buat">Pembuatan Jalan Masuk Pekarangan</option>
+									  <option value="jmp_lebar">Pelebaran Jalan Masuk Pekarangan</option>
+									  <option value="tutup_trotoar">Penutupan Trotoar</option>
+									  <option value="tutup_berm">Penutupan Berm</option>
+									  <option value="tutup_saluran">Penutupan Saluran</option>
+									  <option value="guna_trotoar">Penggunaan Trotoar</option>										  
+									  <option value="guna_berm">Penggunaan Berm</option>	
+									  <option value="guna_saluran">Penggunaan Saluran</option>
+									  <option value="pancang">Pemancangan Tiang Reklame/JPO/Bando dan Sejenisnya</option>
+									  <option value="pematangan">Pematangan Tanah /Lahan</option>
+									  <option value="penggalian">Penggalian Pada Ruang Milik Jalan (RUMIJA)</option>
+									</select> 
+								</span>
 						    </div>
 						    <div>
-						     	<span>Kecamatan</span>
-						    	<span><input type="text" class="form-control" id="number"></span>
+						     	<span>Terletak di: (Alamat)</span>
+						    	<span><input type="text" class="form-control" id="alamat_tujuan" name="alamat_tujuan"></span>
 						    </div>
 						  
 

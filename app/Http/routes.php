@@ -18,6 +18,7 @@ Route::post('login', array('uses' => 'LoginController@validasi'));
 
 //Route::get('statusizin', 'PageController@statusizin');
 Route::get('statusizin', 'IzinController@show_izinstatus');
+Route::post('izin/post', 'IzinController@post');
 
 Route::get('about', 'PageController@about');
 Route::get('izin', 'PageController@izin');

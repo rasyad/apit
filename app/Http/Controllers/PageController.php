@@ -21,12 +21,6 @@ class PageController extends Controller {
 	{
 		return view('izinnext');
 	}
-
-	public function statusizin()
-	{
-		return view('statusizin');
-	}
-
 	public function about()
 	{
 		return view('about');
