@@ -12,7 +12,7 @@ class CreateIzinstatusTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('izinstatus', function(Blueprint $table)
+		Schema::create('ppl_lahan_izinstatus', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('izin');
@@ -33,7 +33,7 @@ class CreateIzinstatusTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('izinstatus');
+		Schema::drop('ppl_lahan_izinstatus');
 	}
 
 }

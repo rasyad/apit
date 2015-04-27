@@ -12,7 +12,7 @@ class CreateEntryIzinTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('post_izins', function(Blueprint $table)
+		Schema::create('ppl_lahan_postizins', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('nik', 16);
@@ -34,7 +34,7 @@ class CreateEntryIzinTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('daftarizin');
+		Schema::drop('ppl_lahan_postizins');
 	}
 
 }
