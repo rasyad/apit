@@ -46,7 +46,25 @@
 		        <li id="izinLink"><a href="./izin">pengajuan izin</a></li>
 		        <li id="statusIzinLink"><a href="./statusizin">status perizinan</a></li>
 		        <li id="aboutLink"><a href="./about">about</a></li>
-		        <li id="loginLink"><a href="./login">login</a></li>
+		        @if (Auth::guest())
+			      		<li id="loginLink"> <a href="{{url('login')}}">Login</a></li>
+			        @else
+			        	<h3>{{Auth::user()->nama}}</h3>
+			        	<li id="logoutLink"> <a href="{{url('logout')}}")>Logout</a></li>
+						<script type="text/javascript">
+							$('#logoutLink').click(function(e) {
+								$.ajax({
+									type: 'get',
+									url: 'http://e-gov-bandung.tk/dukcapil/api/public/auth/logout',
+									success: function(data) {
+									},
+									error: function(data) {
+										// alert(data);
+									}
+								});
+							})
+						</script>
+			        @endif
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="form-group my_search">
