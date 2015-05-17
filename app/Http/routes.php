@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PageController@check');
+Route::get('home', 'PageController@index');
 
 Route::get('login', 'LoginController@index');
 Route::post('login', array('uses' => 'LoginController@validasi'));
