@@ -20,17 +20,17 @@ class LoginController extends Controller {
 	public function validasi()
 	{
 
-		$inputUsername = Input::get('name');
+		$inputNIK = Input::get('nik');
 		$inputPassword = Input::get('password');
 
-		echo (Input::get('name'));
+		echo (Input::get('nik'));
 		echo (Input::get('password'));
 
-		$results = DB::select('select * from users where name="'.$inputUsername.'" and password="'.$inputPassword.'"');
+		$results = DB::select('select * from ppl_dukcapil_ktp where nik="'.$inputNIK.'" and password="'.$inputPassword.'"');
 		if ($results!=NULL) 
 		{
-			Session::put('name', $inputUsername);
-			return redirect('/');
+			Session::put('nik', $inputNIK);
+			return redirect('izin');
 		}
 		else 
 		{

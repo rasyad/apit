@@ -17,7 +17,7 @@
 		<div class="row about">
 			<div class="contact-form"><h2>Permohonan Izin</h2></div>
 
-				<form method="POST" action="izinnext">
+				<form method="POST" action="daftarizin">
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 				<div class="alert alert-success" style="font-size:150%">

@@ -29,7 +29,7 @@
              </thead>
              <tbody>
              	<tr>
-             		@foreach($izinstatus as $izinstatus_show)
+             		@foreach($ppl_lahan_izinstatus as $izinstatus_show)
             		<td>{{ $izinstatus_show->id }}</td>
             		<td>{{ $izinstatus_show->izin }}</td>
             		<td>{{ $izinstatus_show->tanggal_daftar }}</td>
@@ -40,6 +40,8 @@
             		<td>{{ $izinstatus_show->keterangan }}</td>
             	</tr>
              	@endforeach
+
+             	
              </tbody>
 
             			
@@ -47,6 +49,24 @@
           	</div>
     </div>
     </div>
+
+    <!-- DATA TABES SCRIPT -->
+        <script src="../../jquery.dataTables.js" type="text/javascript"></script>
+        <script src="../../dataTables.bootstrap.js" type="text/javascript"></script>
+<!-- page script -->
+        <script type="text/javascript">
+            $(function() {
+                $("#example1").dataTable();
+                $('#example2').dataTable({
+                    "bPaginate": true,
+                    "bLengthChange": false,
+                    "bFilter": false,
+                    "bSort": true,
+                    "bInfo": true,
+                    "bAutoWidth": false
+                });
+            });
+        </script>
 
 
 @stop

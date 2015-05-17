@@ -19,7 +19,8 @@
 
 					    	<div>
 						     	<span>Nomor Induk Kependudukan</span>
-						    	<span><input type="text" class="form-control" id="nik" name="nik"></span>
+						    	<span><input type="text" class="form-control" id="nik" name="nik" placeholder="" readonly></span>
+
 						    </div>
 					    	<div>
 						     	<span>Nama Lengkap</span>

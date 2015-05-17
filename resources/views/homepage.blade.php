@@ -10,6 +10,13 @@
 	<br>
 
 	<div class="container main">
+		<h3>Selamat Datang 
+			<?php	if(!isset($_COOKIE["username"])) {echo "Warga Bandung";
+					} else {
+					echo $_COOKIE["username"];
+			}?>
+		!</h3>
+
 	<div class="row grids_of_3">
 				<div class="col-md-4 grid1_of_3">
 					  <h2>pengajuan izin</h2>

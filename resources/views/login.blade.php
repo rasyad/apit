@@ -15,8 +15,8 @@
               
               <h5 class="form-signin-heading">Log-in untuk mengajukan permohonan izin</h5>
 
-              <label for="name" class="sr-only">Username</label>
-              <input type="text" id="name" name="name" class="form-control" placeholder="Username" required autofocus>
+              <label for="nik" class="sr-only">Nomor Induk Kependudukan</label>
+              <input type="text" id="nik" name="nik" class="form-control" placeholder="Nomor Induk Kependudukan" required autofocus>
 
               <label for="password" class="sr-only">Password</label>
               <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
