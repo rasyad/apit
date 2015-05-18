@@ -11,9 +11,9 @@
 
 	<div class="container main">
 		<h3>Selamat Datang 
-			<?php	if(!isset($_COOKIE["email"])) {echo "Warga Bandung";
+			<?php	if(!isset($_COOKIE["nik"])) {echo "Warga Bandung";
 					} else {
-					echo $_COOKIE["email"];
+					echo $_COOKIE["nik"];
 			}?>
 		!</h3>
 
